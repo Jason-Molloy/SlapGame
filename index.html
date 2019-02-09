@@ -1,12 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Beat Chuck(with help)! - slap-game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="game.css">
 </head>
-<body>
-	
-	<script src=""></script>
+
+<body class="container-fluid">
+	<header>
+		<div class="row">
+			<div class="col">
+				<span>Health:<span id="health">100</span></span>
+				<span>Name:<span id="opponent">Chuck Norris</span></span>
+				<span>Hits:<span id="hits">0</span></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<span id="you">YOU</span>
+				<span>Health:<span id="damage">100</span></span>
+				<span>Hits<span id="hurts">0</span></span>
+			</div>
+		</div>
+	</header>
+	<div class="row">
+		<div class="col">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCs9ovnw1vDHNyaBOL4ETIENJwq5kM_nHlt50oy1F99x5uPzwcQ"
+			 width="400px" />
+		</div>
+	</div>
+	<footer class="center">
+		<div class="row">
+			<button onclick=slap()>JAB!</button>
+			<button onclick=bodyShot()>BODY SHOT!</button>
+			<button onclick=uppercut()>UPPERCUT!</button>
+		</div>
+		<div class="row" id="items">
+			<button onclick=askJoePiscopo()>Ask Kelly Stone for HELP</button>
+			<button onclick=askMachoMan()>Ask Whitelaw Lundgren for HELP</button>
+			<button onclick=askDavidCarradine()>Ask Riley Wilkes for HELP</button>
+			<button onclick=askBruceLee()>BRUCE LEE!!</button>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img id="hurt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxMhcs-oVVfmM0VOlRDYXbLTfKBAuDpgH0Qb3N5TOSYNJTxtP2w"
+				 width="300px" style="display:none;" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<img id="joe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYjjkC1AMAsrNhpNbpe14XcOVgD-S2gy-Ej3KK5OqFx4HnK2CBg"
+				 width="150px" style="display:none;" />
+			</div>
+			<div class="col-3">
+				<img id="macho" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TxHmQ9TCxpvyoh8Ir9I1lVNlnghQcugZT4nFOSDTeUA3bCn2"
+				 width="150px" style="display:none;" />
+			</div>
+			<div class="col-3">
+				<img id="dave" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AL-67f8knSmRtIPD6fWk67DJWYnLNOv6oNorzOWRuQW9Wp-Hqg"
+				 width="150px" style="display:none;" />
+			</div>
+			<div class="col-3">
+				<img id="bruce" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSePtGaEjrLadaEm8qW5uAXGp1TJw8lIonFDP8cM8THmqV3_Q"
+				 width="150px" style="display:none;" />
+			</div>
+		</div>
+	</footer>
+	<script src="game.js"></script>
+	</div>
+	</div>
 </body>
+
 </html>
