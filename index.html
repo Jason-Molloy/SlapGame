@@ -11,66 +11,84 @@
 	<link rel="stylesheet" href="game.css">
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid text-center">
 	<header>
 		<div class="row">
 			<div class="col">
+				<span>Opponent:<span id="opponent">Chuck Norris - </span></span>
 				<span>Health:<span id="health">100</span></span>
-				<span>Name:<span id="opponent">Chuck Norris</span></span>
 				<span>Hits:<span id="hits">0</span></span>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<span id="you">YOU</span>
+				<span id="you">YOU - </span>
 				<span>Health:<span id="damage">100</span></span>
 				<span>Hits<span id="hurts">0</span></span>
 			</div>
 		</div>
 	</header>
-	<div class="row">
-		<div class="col">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCs9ovnw1vDHNyaBOL4ETIENJwq5kM_nHlt50oy1F99x5uPzwcQ"
-			 width="400px" />
-		</div>
-	</div>
-	<footer class="center">
-		<div class="row">
-			<button onclick=slap()>JAB!</button>
-			<button onclick=bodyShot()>BODY SHOT!</button>
-			<button onclick=uppercut()>UPPERCUT!</button>
-		</div>
-		<div class="row" id="items">
-			<button onclick=askJoePiscopo()>Ask Kelly Stone for HELP</button>
-			<button onclick=askMachoMan()>Ask Whitelaw Lundgren for HELP</button>
-			<button onclick=askDavidCarradine()>Ask Riley Wilkes for HELP</button>
-			<button onclick=askBruceLee()>BRUCE LEE!!</button>
-		</div>
+	<main class="center">
 		<div class="row">
 			<div class="col">
-				<img id="hurt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxMhcs-oVVfmM0VOlRDYXbLTfKBAuDpgH0Qb3N5TOSYNJTxtP2w"
-				 width="300px" style="display:none;" />
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCs9ovnw1vDHNyaBOL4ETIENJwq5kM_nHlt50oy1F99x5uPzwcQ"
+				 width="400px" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-3">
-				<img id="joe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYjjkC1AMAsrNhpNbpe14XcOVgD-S2gy-Ej3KK5OqFx4HnK2CBg"
-				 width="150px" style="display:none;" />
+			<div class="col-4">
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick=slap()>JAB!</button>
 			</div>
-			<div class="col-3">
-				<img id="macho" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TxHmQ9TCxpvyoh8Ir9I1lVNlnghQcugZT4nFOSDTeUA3bCn2"
-				 width="150px" style="display:none;" />
+			<div class="col-4">
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick=bodyShot()>BODY SHOT!</button>
 			</div>
-			<div class="col-3">
-				<img id="dave" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AL-67f8knSmRtIPD6fWk67DJWYnLNOv6oNorzOWRuQW9Wp-Hqg"
-				 width="150px" style="display:none;" />
+			<div class="col-4">
+				<button type="button" class="btn btn-primary btn-lg btn-block" onclick=uppercut()>ROUNDHOUSE!</button>
 			</div>
-			<div class="col-3">
-				<img id="bruce" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSePtGaEjrLadaEm8qW5uAXGp1TJw8lIonFDP8cM8THmqV3_Q"
-				 width="150px" style="display:none;" />
+
+
+
+		</div>
+		<div class="row">
+			<div class="col-4 offset-4">
+				<img id="hurt" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxMhcs-oVVfmM0VOlRDYXbLTfKBAuDpgH0Qb3N5TOSYNJTxtP2w"
+				 width="100%" style="display:none;" />
+			</div>
+			<div class="col-4">
+				<button type="button" class="btn btn-danger btn-lg" onClick="window.location.reload()">RESET</button>
 			</div>
 		</div>
-	</footer>
+		<div class="row">
+			<div class="col-3 display-flex">
+				<div class="card bg-dark text-dark">
+					<button onclick=askJoePiscopo()>Ask Kelly Stone for HELP</button>
+					<img id="joe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYjjkC1AMAsrNhpNbpe14XcOVgD-S2gy-Ej3KK5OqFx4HnK2CBg"
+					 width="100%" height="105px" style="display:none;" />
+				</div>
+			</div>
+			<div class="col-3 display-flex">
+				<div class="card bg-dark text-dark">
+					<button onclick=askMachoMan()>Ask Whitelaw Lundgren for HELP</button>
+					<img id="macho" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0TxHmQ9TCxpvyoh8Ir9I1lVNlnghQcugZT4nFOSDTeUA3bCn2"
+					 width="100%" height="105px" style="display:none;" />
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card bg-dark text-dark">
+					<button onclick=askDavidCarradine()>Ask Riley Wilkes for HELP</button>
+					<img id="dave" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AL-67f8knSmRtIPD6fWk67DJWYnLNOv6oNorzOWRuQW9Wp-Hqg"
+					 width="100%" height="105px" style="display:none;" />
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card bg-dark text-dark">
+					<button onclick=askBruceLee()>Chuck's nightmare - BRUCE LEE!!</button>
+					<img id="bruce" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeSePtGaEjrLadaEm8qW5uAXGp1TJw8lIonFDP8cM8THmqV3_Q"
+					 width="100%" height="105px" style="display:none;" />
+				</div>
+			</div>
+		</div>
+	</main>
 	<script src="game.js"></script>
 	</div>
 	</div>

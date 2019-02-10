@@ -1,8 +1,10 @@
-body {
+main {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAScP-o8H_5mDF--CN8ROBiEY1VQxh1cp3-hHXjYEC1LPwVmF9");
   background-size: cover;
   background-repeat: no-repeat;
 };
-.header {
+header {
+  background-color: red;
   color: white;
+  height:"75px";
 }
