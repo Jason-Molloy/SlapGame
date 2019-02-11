@@ -29,6 +29,7 @@ function hits() {
 
 };
 function display() {
+  let action = [];
   for (let i = 0; i < enemy.currentItems.length; i++) {
     document.getElementById("result").innerText = `Chuck was also ${enemy.currentItems[i].move} by ${enemy.currentItems[i].name}. He must remember that from ${enemy.currentItems[i].description}`
   }
@@ -123,7 +124,7 @@ function brucePic() {
 }
 function attack() {
   player.hits++;
-  player.health -= (25 + Math.floor(Math.random() * 60));
+  player.health -= (15 + Math.floor(Math.random() * 45));
 }
 function knockOut() {
   if (enemy.health <= 0) {
